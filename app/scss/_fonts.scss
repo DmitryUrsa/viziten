@@ -1,0 +1,4 @@
+@import "_mixins/font-face";
+
+@include font-face("PT Sans", "../fonts/PTSans/PT_Sans-Web-Regular");
+@include font-face("PT Sans", "../fonts/PTSans/PT_Sans-Web-Bold", bold);
