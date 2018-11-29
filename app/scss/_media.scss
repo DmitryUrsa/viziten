@@ -2,7 +2,13 @@
 
 
 /*==========  Desktop First  ==========*/
-
+@media (max-width: 1160px) {
+	.head-inset {
+		img {
+			max-width: 100%;
+		}
+	}
+}
 // ≥1220px
 @include media-breakpoint-down(lg) {
 	.reviews-table__item {
@@ -11,11 +17,17 @@
 	.menu {
 		font-size: 17px;
 	}
+	.section-presentation-chara {
+		.col-xl-4 {
+			margin-bottom: 40px;
+		}
+	}
 	
 }
 
 // ≥985px
 @include media-breakpoint-down(md) {
+	
 	.promo {
 		&__slide {
 			height: auto;
@@ -106,6 +118,22 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+	.tabs-header__item {
+		max-width: 100%;
+		margin-right: 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	.section-presentation {
+		text-align: center;
+		.check-list {
+			margin-right: auto;
+			margin-left: auto;
+			max-width: max-content;
+			text-align: left;
+		}
+	}
 	.footer-social {
 		margin-bottom: 20px;
 	}
@@ -187,6 +215,12 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+
+	.section-presentation-buttons {
+		.button {
+			margin-bottom: 20px;
+		}
+	}
 	.promo-features {
 		&__item {
 			max-width: 100%;
@@ -208,12 +242,10 @@
 		padding-right: -20px;
 		padding-left: -20px;
 	}
-	.promo {
-		&__title {
-			font-size: 30px;
-			b {
-				font-size: 38px;
-			}
+	.big-title {
+		font-size: 30px;
+		b {
+			font-size: 38px;
 		}
 	}
 	input[type=submit] {
