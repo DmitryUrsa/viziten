@@ -3,7 +3,7 @@
 
 /*==========  Desktop First  ==========*/
 
-// ≥1140px
+// ≥1220px
 @include media-breakpoint-down(lg) {
 	.reviews-table__item {
 		max-width: 200px;
@@ -14,8 +14,26 @@
 	
 }
 
-// ≥902px
+// ≥985px
 @include media-breakpoint-down(md) {
+	.promo {
+		&__slide {
+			height: auto;
+			padding: 0;
+		}
+		&__content {
+			max-width: 100%;
+			padding: 30px;
+			background-color: rgba(0,0,0,.4);
+		}
+	}
+	.promo-features {
+		flex-wrap: wrap;
+		&__item {
+			max-width: calc(50% - 4px);
+			margin-bottom: 8px;
+		}
+	}
 	.share-block {
 		flex-wrap: wrap;
 		&__second, &__first {
@@ -169,6 +187,35 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+	.promo-features {
+		&__item {
+			max-width: 100%;
+		}
+		&__header {
+			flex-direction: column;
+			text-align: center;
+			.icon {
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+		.button {
+			width: 100%;
+		}
+	}
+	.button_big {
+		width: auto;
+		padding-right: -20px;
+		padding-left: -20px;
+	}
+	.promo {
+		&__title {
+			font-size: 30px;
+			b {
+				font-size: 38px;
+			}
+		}
+	}
 	input[type=submit] {
 		width: 120px;
 	}

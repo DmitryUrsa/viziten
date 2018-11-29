@@ -1,5 +1,28 @@
 $(function() {
 
+	jQuery('.tab-control').click(function() {
+		if( ! jQuery(this).hasClass('active') ) {
+			var tab = jQuery(this).data('tabid');
+			jQuery('.tab-control').removeClass('active');
+			jQuery(this).addClass('active');
+			jQuery('.tabs-content__inner').hide();
+			jQuery(tab).show();
+		}
+	})
+
+	jQuery('.dropdown__header').click(function() {
+		jQuery(this).parent().toggleClass('dropdown_closed');
+	})
+
+	jQuery('.accordeon__header').click(function() {
+		if( ! jQuery(this).hasClass('active') ) {
+			jQuery('.accordeon__header').removeClass('active');
+			jQuery(this).addClass('active');
+			jQuery('.accordeon__content-outer').slideUp();
+			jQuery(this).parent().find('.accordeon__content-outer').slideDown();
+		}
+	})
+
 	jQuery('.catalog__header-item').click(function() {
 		var target = jQuery(this).data('target');
 		jQuery('.catalog__header-item').removeClass('active')

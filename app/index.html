@@ -86,49 +86,7 @@
 				<article class="main-slider__text">
 					<div class="main-slider__header">КАЧЕСТВО</div>
 					<div class="main-slider__subhead">премиального уровня</div>
-					<ul>
-						<li>
-						Печать на итальянской экстра белой
-						</li>
-						<li>
-						Печать на итальянской экстра белой
-						</li>
-						<li>
-						Печать на итальянской экстра белой
-						</li>
-					</ul>
-					<a href="#" class="button button_big button_green button_uppercase">Выбрать дизайн</a>
-				</article>
-				<div class="main-slider__image">
-					<img src="img/slide.jpg" alt="">
-				</div>
-			</section>
-			<section class="main-slider__item">
-				<article class="main-slider__text">
-					<div class="main-slider__header">КАЧЕСТВО</div>
-					<div class="main-slider__subhead">премиального уровня</div>
-					<ul>
-						<li>
-						Печать на итальянской экстра белой
-						</li>
-						<li>
-						Печать на итальянской экстра белой
-						</li>
-						<li>
-						Печать на итальянской экстра белой
-						</li>
-					</ul>
-					<a href="#" class="button button_big button_green button_uppercase">Выбрать дизайн</a>
-				</article>
-				<div class="main-slider__image">
-					<img src="img/slide.jpg" alt="">
-				</div>
-			</section>
-			<section class="main-slider__item">
-				<article class="main-slider__text">
-					<div class="main-slider__header">КАЧЕСТВО</div>
-					<div class="main-slider__subhead">премиального уровня</div>
-					<ul>
+					<ul class="check-list">
 						<li>
 						Печать на итальянской экстра белой
 						</li>
@@ -578,31 +536,10 @@
 						<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fprintclick.ru&amp;width=108&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=21&amp;appId=643194599076725" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:108px; height:20px;" allowtransparency="true"></iframe>
 					</div>
 					<div class="share-block__social-item">
-						<!-- Put this script tag to the <head> of your page -->
-						<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
-						<!-- Put this script tag to the place, where the Share button will be -->
-						<script type="text/javascript"><!--
-						document.write(VK.Share.button(false,{type: "round", text: "Сохранить"}));
-						--></script>
+						<script type="text/javascript">document.write(VK.Share.button(false,{type: "round", text: "Сохранить"}));</script>
 					</div>
 					<div class="share-block__social-item">
 						<div id="ok_shareWidget"></div>
-						<script>
-						!function (d, id, did, st, title, description, image) {
-						  var js = d.createElement("script");
-						  js.src = "https://connect.ok.ru/connect.js";
-						  js.onload = js.onreadystatechange = function () {
-						  if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
-						    if (!this.executed) {
-						      this.executed = true;
-						      setTimeout(function () {
-						        OK.CONNECT.insertShareWidget(id,did,st, title, description, image);
-						      }, 0);
-						    }
-						  }};
-						  d.documentElement.appendChild(js);
-						}(document,"ok_shareWidget",document.URL,'{"sz":20,"st":"oval","nt":1}',"","","");
-						</script>
 					</div>
 					<div class="share-block__social-item">
 						<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" style="position: static; visibility: visible; width: 230px; height: 20px;" title="Twitter Follow Button" src="https://platform.twitter.com/widgets/follow_button.c9b0d6e1ef0320c49dc875c581cc9586.ru.html#dnt=false&amp;id=twitter-widget-0&amp;lang=ru&amp;screen_name=ru_printclick&amp;show_count=true&amp;show_screen_name=true&amp;size=m&amp;time=1543153181911" data-screen-name="ru_printclick"></iframe>
@@ -616,7 +553,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="white-wrap white-wrap_padding">
-				<div class="footer-links-outer footer-inner">
+				<nav class="footer-links-outer footer-inner">
 					<div class="footer-links">
 						<div class="medium-header">Сервис</div>
 						<a href="#" class="footer-links__item">8 800 200 05 35</a>
@@ -662,17 +599,19 @@
 						<a href="#" class="footer-links__item">Карта сайта</a>
 						<a href="#" class="footer-links__item accent">Карта сайта</a>
 					</div>
-				</div>
-				<div class="footer-inner row">
-					<div class="col-md-3">
-						<div class="medium-header">Скидка 7%</div>
-						Подпишитесь на нашу e-mail рассылку и Вы получите скидку 7% на свой первый заказ						
-					</div>
-					<div class="col-md-7 d-flex align-items-center">
-						<form action="" class="subscription-form">
-							<input type="text" placeholder="Ваш e-mail">
-							<input type="submit" value="Подписаться">
-						</form>
+				</nav>
+				<div class="footer-inner">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="medium-header">Скидка 7%</div>
+							Подпишитесь на нашу e-mail рассылку и Вы получите скидку 7% на свой первый заказ						
+						</div>
+						<div class="col-md-7 d-flex align-items-center">
+							<form action="" class="subscription-form">
+								<input type="text" placeholder="Ваш e-mail">
+								<input type="submit" value="Подписаться">
+							</form>
+						</div>
 					</div>
 				</div>
 				<div class="row footer-inner">
@@ -701,6 +640,23 @@
 		</div>
 	</footer>
 
+	<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
+	<script>
+	!function (d, id, did, st, title, description, image) {
+	  var js = d.createElement("script");
+	  js.src = "https://connect.ok.ru/connect.js";
+	  js.onload = js.onreadystatechange = function () {
+	  if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+	    if (!this.executed) {
+	      this.executed = true;
+	      setTimeout(function () {
+	        OK.CONNECT.insertShareWidget(id,did,st, title, description, image);
+	      }, 0);
+	    }
+	  }};
+	  d.documentElement.appendChild(js);
+	}(document,"ok_shareWidget",document.URL,'{"sz":20,"st":"oval","nt":1}',"","","");
+	</script>
 	<script src="js/scripts.min.js"></script>
 
 </body>

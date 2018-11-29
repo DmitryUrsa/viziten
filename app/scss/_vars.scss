@@ -1,12 +1,15 @@
 $default-font: 'PT Sans', sans-serif;
 $accent: #d80c8c;
-$orange: #ffb800;
+$orange: #ff6e00;
+$purple: #9a35ad;
+$pink: #d80c8c;
+$yellow: #ffb800;
 $text: #333;
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
 $grid-columns: 12;
-$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 985px, xl: 1220px);
+$grid-breakpoints: (xs: 0, sm: 586px, md: 768px, lg: 985px, xl: 1220px);
 $container-max-widths: (sm: 540px, md: 720px, lg: 940px, xl: 980px);
 
 $gutter: $grid-gutter-width;
